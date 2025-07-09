@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ṛtú | Environment Festival 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png" alt="Ṛtú Logo">
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#video">Video</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section with GIF background -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Environment Festival 2025</h1>
+            <p>Join us in celebrating our planet and exploring sustainable solutions for a greener future. April 22-25, 2025 at Central Park, New York.</p>
+            <a href="#events" class="btn">Explore Events</a>
+        </div>
+    </section>
+    
+    <!-- Updates Bar - Dynamic -->
+    <section class="updates-bar">
+        <div class="container updates-content">
+            <div class="updates-text">
+                <span>LATEST</span>
+                <p id="latest-update">Loading latest updates...</p>
+            </div>
+            <a href="#" class="btn" id="update-btn">Register Now</a>
+        </div>
+    </section>
+    
+    <!-- Dynamic Slideshow -->
+    <section class="container">
+        <div class="swiper">
+            <div class="swiper-wrapper" id="slideshow-container">
+                <!-- Slides will be dynamically inserted here from Google Sheets -->
+                <div class="swiper-slide slide-loader">Loading slideshow...</div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Ṛtú</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Ṛtú (meaning "season" in Sanskrit) is an annual environmental festival that brings together activists, innovators, and community members to celebrate our planet and explore sustainable solutions.</p>
+                    <p>Founded in 2015, our festival has grown from a local gathering to an international event attracting over 50,000 attendees each year. We believe that through education, collaboration, and celebration, we can inspire meaningful change.</p>
+                    <p>This year's theme is "Regeneration" - focusing on restoring ecosystems, rebuilding communities, and reimagining our relationship with nature.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="images/header.png" alt="About Ṛtú">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Dynamic Events Section -->
+    <section class="events" id="events">
+        <div class="container">
+            <h2 class="section-title">Featured Events</h2>
+            <div class="events-grid" id="events-container">
+                <!-- Events will be dynamically inserted here from Google Sheets -->
+                <div class="event-loader">Loading events...</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- News Section -->
+    <section class="news" id="news">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            <div class="news-grid" id="news-container">
+                <!-- News will be dynamically inserted here from Google Sheets -->
+                <div class="news-loader">Loading news...</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Video Section -->
+    <section class="video-section" id="video">
+        <div class="container">
+            <h2 class="section-title">Featured Videos</h2>
+            <div class="video-grid" id="video-container">
+                <!-- Videos will be dynamically inserted here from Google Sheets -->
+                <div class="video-loader">Loading videos...</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Dynamic Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Festival Gallery</h2>
+            <div class="gallery-grid" id="gallery-container">
+                <!-- Gallery items will be dynamically inserted here from Google Sheets -->
+                <div class="gallery-loader">Loading gallery...</div>
+            </div>
+            <div class="text-center" style="margin-top: 2rem;">
+                <a href="#" class="btn">View More Photos</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Brand Partners Section -->
+    <section class="brands">
+        <div class="container">
+            <h2 class="section-title">Our Partners</h2>
+            <div class="brands-grid" id="brands-container">
+                <!-- Brand logos will be dynamically inserted here from Google Sheets -->
+                <div class="brands-loader">Loading partners...</div>
+            </div>
+        </div>
+    </section>
+    <!--
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title">Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Team Member">
+                    <h3>Dr. Priya Sharma</h3>
+                    <p>Festival Director</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member">
+                    <h3>Mark Johnson</h3>
+                    <p>Program Coordinator</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member">
+                    <h3>Lisa Chen</h3>
+                    <p>Partnerships Manager</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Team Member">
+                    <h3>David Mbeki</h3>
+                    <p>Volunteer Coordinator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Ṛtú</h3>
+                    <p>Celebrating our planet, inspiring change.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Email: info@rtufest.org</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Address: 123 Greenway Blvd, NY</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for updates and announcements</p>
+                    <form>
+                        <input type="email" placeholder="Your email">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Ṛtú Environment Festival. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
