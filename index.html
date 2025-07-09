@@ -9,51 +9,64 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <img src="images/logo.png" alt="Ṛtú Logo">
-                </div>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Ṛtú Logo">
+            </div>
+            
+            <div class="nav-links-container">
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#video">Video</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#events" class="nav-link">Events</a></li>
+                    <li><a href="#news" class="nav-link">News</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#video" class="nav-link">Video</a></li>
+                    <li><a href="#team" class="nav-link">Team</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
+                
+                <div class="nav-cta">
+                    <a href="#events" class="btn btn-small">Events</a>
+                </div>
+            </div>
+            
+            <button class="hamburger" aria-label="Menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </div>
+</header>
     
-    <!-- Hero Section with GIF background -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Environment Festival 2025</h1>
-            <p>Join us in celebrating our planet and exploring sustainable solutions for a greener future. April 22-25, 2025 at Central Park, New York.</p>
-            <a href="#events" class="btn">Explore Events</a>
-        </div>
-    </section>
+ <section class="hero" id="home">
+    <video autoplay muted loop class="hero-video">
+        <source src="images/header.mp4" type="video/mp4">
+        <!-- Fallback image if video doesn't load -->
+        <img src="images/header-fallback.jpg" alt="Environment background">
+    </video>
+    <div class="hero-content">
+        <h1>Ṛtú- Environment Festival 2025</h1>
+        <p>Join us in RITU 2025, the second edition of the Environment Film Festival hosted by St. Joseph’s College (Autonomous), Irinjalakuda.</p>
+        <a href="#events" class="btn">Explore Events</a>
+    </div>
+ </section>
     
-    <!-- Updates Bar - Dynamic -->
-    <section class="updates-bar">
-        <div class="container updates-content">
+<!-- Updates Bar - Dynamic -->
+
+<section class="updates-bar">
+    <div class="container">
+        <div class="updates-content">
             <div class="updates-text">
                 <span>LATEST</span>
                 <p id="latest-update">Loading latest updates...</p>
             </div>
-            <a href="#" class="btn" id="update-btn">Register Now</a>
         </div>
-    </section>
+    </div>
+</section>
     
     <!-- Dynamic Slideshow -->
     <section class="container">
@@ -74,9 +87,9 @@
             <h2 class="section-title">About Ṛtú</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Ṛtú (meaning "season" in Sanskrit) is an annual environmental festival that brings together activists, innovators, and community members to celebrate our planet and explore sustainable solutions.</p>
-                    <p>Founded in 2015, our festival has grown from a local gathering to an international event attracting over 50,000 attendees each year. We believe that through education, collaboration, and celebration, we can inspire meaningful change.</p>
-                    <p>This year's theme is "Regeneration" - focusing on restoring ecosystems, rebuilding communities, and reimagining our relationship with nature.</p>
+                    <p>RITU 2025 is the second edition of the Environment Film Festival hosted by St. Joseph’s College (Autonomous), Irinjalakuda. The event is designed as a vibrant platform that celebrates, critiques, and creatively engages with pressing environmental issues through the powerful medium of cinema.
+
+Through carefully curated films, panel discussions, exhibitions, and artistic expressions, this festival aims to stir consciousness, evoke dialogue, and promote sustainable lifestyles and environmental responsibility among students, educators, and the larger community.</p><br>
                     <a href="#" class="btn">Learn More</a>
                 </div>
                 <div class="about-image">
@@ -143,9 +156,9 @@
             </div>
         </div>
     </section>
-    <!--
+    
     <!-- Team Section -->
-    <section class="team" id="team">
+   <section class="team" id="team">
         <div class="container">
             <h2 class="section-title">Our Team</h2>
             <div class="team-grid">
@@ -175,7 +188,7 @@
             </div>
         </div>
     </section>
-    -->
+    
     
     <!-- Footer -->
     <footer id="contact">
